@@ -1,0 +1,18 @@
+---
+title: "Teste git vscode"
+format: html
+---
+
+```{r}
+df <- iris
+boxplot(df$Sepal.Length ~ df$Species)
+```
+
+```{python}
+import pandas as pd
+import seaborn as sns
+
+df = pd.read_csv('date/iris.csv')
+sns.boxplot(x = df["Species"], y=df["Sepal.Length"] )
+
+```
