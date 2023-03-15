@@ -1,21 +1,5 @@
 
-write.csv(iris,"date/iris.csv")
-
-usethis::create_github_token()
-usethis::edit_r_environ()
-
-data <- data.frame("super_mais" = c("arroz", "feijao", "carne", "frango", NA, NA),
-             "super_bom" = c("macarrao", "cebola", NA, NA, NA, NA),
-             "super_top" = c("arroz", "macarrao", "tomate", "frango", NA, NA),
-             "super_show" = c("arroz", "feijao", "macarrao", "frango", "alface", "tomate"),
-             "super_massa" = c("feijao", "carne", "alface", NA, NA, NA))
-
-
-Filter(function(x) any(x == "arroz"), data)
-
-usethis::use_git()
-usethis::use_github()
-
+# Dados
 dado=c(70.5, 71.8, 73.9, 74.4, 75.9, 76.0,
        76.6, 76.7, 77.4, 78.0, 78.1, 78.1,
        78.2, 78.4, 78.4, 78.4, 78.5, 78.5,
@@ -30,6 +14,8 @@ dado=c(70.5, 71.8, 73.9, 74.4, 75.9, 76.0,
        85.5, 85.5, 85.7, 86.4, 86.5, 86.8,
        86.8, 86.8, 87.1, 87.1, 87.1, 87.3,
        88.5, 90.0)
+
+
 
 hist(dado,
      main = "Consumo de energia elétrica (Kw/h) de 80 famílias em um bairro de CG",
